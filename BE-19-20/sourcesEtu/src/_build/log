@@ -1,0 +1,258 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/nin7o/Documents/Cours/OCAML/BE-19-20/sourcesEtu/src
+# Auto-detected concurrency: 12
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_0773b3_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/usr/bin"
+#  ; ocaml = Ok External "/usr/bin/ocaml"
+#  ; ocamlc = External "/usr/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/usr/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/usr/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/usr/bin/ocamlmklib.opt"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/home/nin7o/Documents/Cours/OCAML/BE-19-20/sourcesEtu/src/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External "/usr/lib/ocaml"; External "/home/nin7o/.opam/default/lib" ]
+#  ; ocaml_config =
+#      { version = "5.0.0"
+#      ; standard_library_default = "/usr/lib/ocaml"
+#      ; standard_library = "/usr/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-g"
+#          ; "-fno-omit-frame-pointer"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-g"
+#          ; "-ffile-prefix-map=/build/ocaml/src=/usr/src/debug/ocaml"
+#          ; "-flto=auto"
+#          ; "-ffat-lto-objects"
+#          ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-g"
+#          ; "-fno-omit-frame-pointer"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-g"
+#          ; "-ffile-prefix-map=/build/ocaml/src=/usr/src/debug/ocaml"
+#          ; "-flto=auto"
+#          ; "-ffat-lto-objects"
+#          ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-g"
+#          ; "-fno-omit-frame-pointer"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-g"
+#          ; "-ffile-prefix-map=/build/ocaml/src=/usr/src/debug/ocaml"
+#          ; "-flto=auto"
+#          ; "-ffat-lto-objects"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-g"
+#          ; "-fno-omit-frame-pointer"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-g"
+#          ; "-ffile-prefix-map=/build/ocaml/src=/usr/src/debug/ocaml"
+#          ; "-flto=auto"
+#          ; "-ffat-lto-objects"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = true
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X032"
+#      ; cmi_magic_number = "Caml1999I032"
+#      ; cmo_magic_number = "Caml1999O032"
+#      ; cma_magic_number = "Caml1999A032"
+#      ; cmx_magic_number = "Caml1999Y032"
+#      ; cmxa_magic_number = "Caml1999Z032"
+#      ; ast_impl_magic_number = "Caml1999M032"
+#      ; ast_intf_magic_number = "Caml1999N032"
+#      ; cmxs_magic_number = "Caml1999D032"
+#      ; cmt_magic_number = "Caml1999T032"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  ; instrument_with = []
+#  }
+$ (cd _build/default && /usr/bin/ocamlyacc parser.mly)
+$ (cd _build/default && /usr/bin/ocamllex -q -o lexer.ml lexer.mll)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -w -49 -nopervasives -nostdlib -g -bin-annot -I .be.objs/byte -no-alias-deps -o .be.objs/byte/be.cmo -c -impl be.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -w -49 -nopervasives -nostdlib -g -I .be.objs/byte -I .be.objs/native -intf-suffix .ml-gen -no-alias-deps -o .be.objs/native/be.cmx -c -impl be.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlc.opt -g -w -24 -I .ppx/bfcab61e6a21ecf6d2f80029fc1ef484 -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/ocaml-compiler-libs/common -I /home/nin7o/.opam/default/lib/ocaml-compiler-libs/shadow -I /home/nin7o/.opam/default/lib/ppx_derivers -I /home/nin7o/.opam/default/lib/ppx_inline_test -I /home/nin7o/.opam/default/lib/ppx_inline_test/libname -I /home/nin7o/.opam/default/lib/ppxlib -I /home/nin7o/.opam/default/lib/ppxlib/ast -I /home/nin7o/.opam/default/lib/ppxlib/astlib -I /home/nin7o/.opam/default/lib/ppxlib/print_diff -I /home/nin7o/.opam/default/lib/ppxlib/stdppx -I /home/nin7o/.opam/default/lib/ppxlib/traverse_builtins -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/stdlib-shims -I /usr/lib/ocaml/compiler-libs -no-alias-deps -o .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/dune__exe___ppx.cmo -c -impl .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/_ppx.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -g -w -24 -I .ppx/bfcab61e6a21ecf6d2f80029fc1ef484 -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/ocaml-compiler-libs/common -I /home/nin7o/.opam/default/lib/ocaml-compiler-libs/shadow -I /home/nin7o/.opam/default/lib/ppx_derivers -I /home/nin7o/.opam/default/lib/ppx_inline_test -I /home/nin7o/.opam/default/lib/ppx_inline_test/libname -I /home/nin7o/.opam/default/lib/ppxlib -I /home/nin7o/.opam/default/lib/ppxlib/ast -I /home/nin7o/.opam/default/lib/ppxlib/astlib -I /home/nin7o/.opam/default/lib/ppxlib/print_diff -I /home/nin7o/.opam/default/lib/ppxlib/stdppx -I /home/nin7o/.opam/default/lib/ppxlib/traverse_builtins -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/stdlib-shims -I /usr/lib/ocaml/compiler-libs -intf-suffix .ml-gen -no-alias-deps -o .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/dune__exe___ppx.cmx -c -impl .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/_ppx.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -g -w -24 -o .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe /home/nin7o/.opam/default/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /home/nin7o/.opam/default/lib/base/base_internalhash_types /home/nin7o/.opam/default/lib/base/caml/caml.cmxa /home/nin7o/.opam/default/lib/sexplib0/sexplib0.cmxa /home/nin7o/.opam/default/lib/base/shadow_stdlib/shadow_stdlib.cmxa /home/nin7o/.opam/default/lib/base/base.cmxa -I /home/nin7o/.opam/default/lib/base /usr/lib/ocaml/compiler-libs/ocamlcommon.cmxa /home/nin7o/.opam/default/lib/ocaml-compiler-libs/common/ocaml_common.cmxa /home/nin7o/.opam/default/lib/ppxlib/astlib/astlib.cmxa /home/nin7o/.opam/default/lib/stdlib-shims/stdlib_shims.cmxa /home/nin7o/.opam/default/lib/ppxlib/ast/ppxlib_ast.cmxa /home/nin7o/.opam/default/lib/ocaml-compiler-libs/shadow/ocaml_shadow.cmxa /home/nin7o/.opam/default/lib/ppxlib/print_diff/ppxlib_print_diff.cmxa /home/nin7o/.opam/default/lib/ppx_derivers/ppx_derivers.cmxa /home/nin7o/.opam/default/lib/ppxlib/traverse_builtins/ppxlib_traverse_builtins.cmxa /home/nin7o/.opam/default/lib/ppxlib/stdppx/stdppx.cmxa /home/nin7o/.opam/default/lib/ppxlib/ppxlib.cmxa /home/nin7o/.opam/default/lib/ppx_inline_test/libname/ppx_inline_test_libname.cmxa /home/nin7o/.opam/default/lib/ppx_inline_test/ppx_inline_test.cmxa .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/dune__exe___ppx.cmx)
+$ (cd _build/.sandbox/26e86344fc2b58fc76f4c196b5c96a58/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o bfs.pp.ml --impl bfs.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/e4ea6f1ecb86e10a476771f7d124579d/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o location.pp.mli --intf location.mli -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/cdd305ae1971123b5b5fa68d6c8dd2f0/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o location.pp.ml --impl location.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/2e505389ac97db66b6eb7f6710aacaf4/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o parse.pp.ml --impl parse.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/5bfe239ad29d0f45dd40144c12644792/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o bfs.pp.mli --intf bfs.mli -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/12c389773d19e73b60c19a149c91fa67/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o main.pp.ml --impl main.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/4b02f327a1e16bb0e6b7e57f0903bbac/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o parse.pp.mli --intf parse.mli -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/f0dce068a18db71ffcf587bd401e6fae/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o lexer.pp.ml --impl lexer.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/ee83884e7043b5dc9fe1de30a2473b93/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o parser.pp.mli --intf parser.mli -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/eee6682766172a81f3ff735e70d2c3ad/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' --cookie 'library-name="be"' -o plateau.pp.ml --impl plateau.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/0faf45b9f9c66d6cfa6923843da936e1/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o utils.pp.ml --impl utils.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/7f46383dc5e2722f93a343bbc5952a26/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o parser.pp.ml --impl parser.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl main.pp.ml) > _build/default/.main.eobjs/dune__exe__Main.impl.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl plateau.pp.ml) > _build/default/.be.objs/be__Plateau.impl.d
+$ (cd _build/.sandbox/6d9118deef8cc6dab365116f672dda2e/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o report.pp.ml --impl report.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/fc3fc7f7a1cc4a2d1955a1553de93620/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o report.pp.mli --intf report.mli -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/0d9308657238f9a97a425299fc51d6a3/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' --cookie 'library-name="be"' -o plateau.pp.mli --intf plateau.mli -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/25d6cc733c5c0b38b99f5a64d830e5db/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' -o utils.pp.mli --intf utils.mli -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf bfs.pp.mli) > _build/default/.main.eobjs/dune__exe__Bfs.intf.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf parse.pp.mli) > _build/default/.main.eobjs/dune__exe__Parse.intf.d
+$ (cd _build/.sandbox/fca59853028aa0cff128b48e4d47b193/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' --cookie 'library-name="be"' -o wall.pp.mli --intf wall.mli -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/9c68bdeeba771d69a738c7d42eb1456e/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' --cookie 'library-name="be"' -o wall.pp.ml --impl wall.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/1d296e1104611a0881fd7e97985561b0/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' --cookie 'library-name="be"' -o pos.pp.ml --impl pos.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf plateau.pp.mli) > _build/default/.be.objs/be__Plateau.intf.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf utils.pp.mli) > _build/default/.main.eobjs/dune__exe__Utils.intf.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf wall.pp.mli) > _build/default/.be.objs/be__Wall.intf.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl wall.pp.ml) > _build/default/.be.objs/be__Wall.impl.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl pos.pp.ml) > _build/default/.be.objs/be__Pos.impl.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl bfs.pp.ml) > _build/default/.main.eobjs/dune__exe__Bfs.impl.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .be.objs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -no-alias-deps -open Be -o .be.objs/byte/be__Wall.cmi -c -intf wall.pp.mli)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl parse.pp.ml) > _build/default/.main.eobjs/dune__exe__Parse.impl.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf parser.pp.mli) > _build/default/.main.eobjs/dune__exe__Parser.intf.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl lexer.pp.ml) > _build/default/.main.eobjs/dune__exe__Lexer.impl.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf location.pp.mli) > _build/default/.main.eobjs/dune__exe__Location.intf.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf report.pp.mli) > _build/default/.main.eobjs/dune__exe__Report.intf.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .be.objs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -intf-suffix .ml -no-alias-deps -open Be -o .be.objs/byte/be__Wall.cmo -c -impl wall.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .be.objs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -no-alias-deps -open Be -o .be.objs/byte/be__Plateau.cmi -c -intf plateau.pp.mli)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl parser.pp.ml) > _build/default/.main.eobjs/dune__exe__Parser.impl.d
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .be.objs/byte -I .be.objs/native -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -intf-suffix .ml -no-alias-deps -open Be -o .be.objs/native/be__Wall.cmx -c -impl wall.pp.ml)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl location.pp.ml) > _build/default/.main.eobjs/dune__exe__Location.impl.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .be.objs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -no-alias-deps -open Be -o .be.objs/byte/be__Pos.cmo -c -impl pos.pp.ml)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl report.pp.ml) > _build/default/.main.eobjs/dune__exe__Report.impl.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl utils.pp.ml) > _build/default/.main.eobjs/dune__exe__Utils.impl.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .be.objs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -intf-suffix .ml -no-alias-deps -open Be -o .be.objs/byte/be__Plateau.cmo -c -impl plateau.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -w -49 -nopervasives -nostdlib -g -bin-annot -I .main.eobjs/byte -no-alias-deps -o .main.eobjs/byte/dune__exe.cmo -c -impl .main.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf main.pp.mli) > _build/default/.main.eobjs/dune__exe__Main.intf.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -a -o be.cma .be.objs/byte/be.cmo .be.objs/byte/be__Wall.cmo .be.objs/byte/be__Plateau.cmo .be.objs/byte/be__Pos.cmo)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .main.eobjs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -no-alias-deps -open Dune__exe -o .main.eobjs/byte/dune__exe__Parser.cmi -c -intf parser.pp.mli)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .main.eobjs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -no-alias-deps -open Dune__exe -o .main.eobjs/byte/dune__exe__Main.cmi -c -intf main.pp.mli)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .main.eobjs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -no-alias-deps -open Dune__exe -o .main.eobjs/byte/dune__exe__Utils.cmi -c -intf utils.pp.mli)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .main.eobjs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -no-alias-deps -open Dune__exe -o .main.eobjs/byte/dune__exe__Bfs.cmi -c -intf bfs.pp.mli)
+> File "bfs.mli", line 8, characters 23-32:
+> 8 | val bfs : Plateau.t -> Pos.Pos.t -> (Pos.Pos.t -> bool) -> solution * Pos.Pos.t
+>                            ^^^^^^^^^
+> Error: Unbound module Pos.Pos
+[2]
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -w -49 -nopervasives -nostdlib -g -I .main.eobjs/byte -I .main.eobjs/native -intf-suffix .ml-gen -no-alias-deps -o .main.eobjs/native/dune__exe.cmx -c -impl .main.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .main.eobjs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -no-alias-deps -open Dune__exe -o .main.eobjs/byte/dune__exe__Parse.cmi -c -intf parse.pp.mli)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .main.eobjs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -no-alias-deps -open Dune__exe -o .main.eobjs/byte/dune__exe__Location.cmi -c -intf location.pp.mli)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .be.objs/byte -I .be.objs/native -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -intf-suffix .ml -no-alias-deps -open Be -o .be.objs/native/be__Plateau.cmx -c -impl plateau.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .main.eobjs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -no-alias-deps -open Dune__exe -o .main.eobjs/byte/dune__exe__Lexer.cmo -c -impl lexer.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I .main.eobjs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -no-alias-deps -open Dune__exe -o .main.eobjs/byte/dune__exe__Report.cmi -c -intf report.pp.mli)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .be.objs/byte -I .be.objs/native -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -intf-suffix .ml -no-alias-deps -open Be -o .be.objs/native/be__Pos.cmx -c -impl pos.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .main.eobjs/byte -I .main.eobjs/native -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -I .be.objs/native -intf-suffix .ml -no-alias-deps -open Dune__exe -o .main.eobjs/native/dune__exe__Location.cmx -c -impl location.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -a -o be.cmxa .be.objs/native/be.cmx .be.objs/native/be__Wall.cmx .be.objs/native/be__Plateau.cmx .be.objs/native/be__Pos.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .main.eobjs/byte -I .main.eobjs/native -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -I .be.objs/native -intf-suffix .ml -no-alias-deps -open Dune__exe -o .main.eobjs/native/dune__exe__Parser.cmx -c -impl parser.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .main.eobjs/byte -I .main.eobjs/native -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -I .be.objs/native -intf-suffix .ml -no-alias-deps -open Dune__exe -o .main.eobjs/native/dune__exe__Report.cmx -c -impl report.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .main.eobjs/byte -I .main.eobjs/native -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -I .be.objs/native -intf-suffix .ml -no-alias-deps -open Dune__exe -o .main.eobjs/native/dune__exe__Lexer.cmx -c -impl lexer.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -shared -linkall -I . -o be.cmxs be.cmxa)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .main.eobjs/byte -I .main.eobjs/native -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -I .be.objs/native -intf-suffix .ml -no-alias-deps -open Dune__exe -o .main.eobjs/native/dune__exe__Utils.cmx -c -impl utils.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I .main.eobjs/byte -I .main.eobjs/native -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -I /usr/lib/ocaml/unix -I .be.objs/byte -I .be.objs/native -intf-suffix .ml -no-alias-deps -open Dune__exe -o .main.eobjs/native/dune__exe__Parse.cmx -c -impl parse.pp.ml)

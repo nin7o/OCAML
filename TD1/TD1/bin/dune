@@ -1,0 +1,6 @@
+(executable
+ (public_name TD1)
+ (name main)
+ (libraries TD1)
+ (preprocess 
+   (pps ppx_inline_test)))

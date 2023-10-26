@@ -1,0 +1,200 @@
+# dune utop
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/nin7o/Documents/Cours/OCAML/TP3/sourceEtu
+# Auto-detected concurrency: 8
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_76f7a8_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/usr/bin"
+#  ; ocaml = Ok External "/usr/bin/ocaml"
+#  ; ocamlc = External "/usr/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/usr/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/usr/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/usr/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" :
+#            "/usr/lib/ocaml:/home/nin7o/.opam/default/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/usr/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/home/nin7o/Documents/Cours/OCAML/TP3/sourceEtu"
+#        ; "INSIDE_DUNE" :
+#            "/home/nin7o/Documents/Cours/OCAML/TP3/sourceEtu/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/home/nin7o/Documents/Cours/OCAML/TP3/sourceEtu/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/home/nin7o/Documents/Cours/OCAML/TP3/sourceEtu/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/home/nin7o/Documents/Cours/OCAML/TP3/sourceEtu/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External "/usr/lib/ocaml"; External "/home/nin7o/.opam/default/lib" ]
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "5.0.0"
+#      ; standard_library_default = "/usr/lib/ocaml"
+#      ; standard_library = "/usr/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-g"
+#          ; "-fno-omit-frame-pointer"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-g"
+#          ; "-ffile-prefix-map=/build/ocaml/src=/usr/src/debug/ocaml"
+#          ; "-flto=auto"
+#          ; "-ffat-lto-objects"
+#          ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-g"
+#          ; "-fno-omit-frame-pointer"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-g"
+#          ; "-ffile-prefix-map=/build/ocaml/src=/usr/src/debug/ocaml"
+#          ; "-flto=auto"
+#          ; "-ffat-lto-objects"
+#          ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-g"
+#          ; "-fno-omit-frame-pointer"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-g"
+#          ; "-ffile-prefix-map=/build/ocaml/src=/usr/src/debug/ocaml"
+#          ; "-flto=auto"
+#          ; "-ffat-lto-objects"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-g"
+#          ; "-fno-omit-frame-pointer"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-g"
+#          ; "-ffile-prefix-map=/build/ocaml/src=/usr/src/debug/ocaml"
+#          ; "-flto=auto"
+#          ; "-ffat-lto-objects"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = true
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X032"
+#      ; cmi_magic_number = "Caml1999I032"
+#      ; cmo_magic_number = "Caml1999O032"
+#      ; cma_magic_number = "Caml1999A032"
+#      ; cmx_magic_number = "Caml1999Y032"
+#      ; cmxa_magic_number = "Caml1999Z032"
+#      ; ast_impl_magic_number = "Caml1999M032"
+#      ; ast_intf_magic_number = "Caml1999N032"
+#      ; cmxs_magic_number = "Caml1999D032"
+#      ; cmt_magic_number = "Caml1999T032"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/.sandbox/c8a1f4272567570f33aa7268155cb8b7/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="tp3"' -o tp3.pp.ml --impl tp3.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .tp3.objs/byte -I /home/nin7o/.opam/default/lib/base -I /home/nin7o/.opam/default/lib/base/base_internalhash_types -I /home/nin7o/.opam/default/lib/base/caml -I /home/nin7o/.opam/default/lib/base/shadow_stdlib -I /home/nin7o/.opam/default/lib/jane-street-headers -I /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_inline_test/config -I /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/nin7o/.opam/default/lib/sexplib0 -I /home/nin7o/.opam/default/lib/time_now -no-alias-deps -opaque -o .tp3.objs/byte/tp3.cmo -c -impl tp3.pp.ml)
+> File "tp3.ml", line 124, characters 8-17:
+> 124 | let rec partition a =
+>               ^^^^^^^^^
+> Warning 39 [unused-rec-flag]: unused rec flag.
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o tp3.cma .tp3.objs/byte/tp3.cmo)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o .utop/utop.exe -output-complete-exe /usr/lib/ocaml/compiler-libs/ocamlcommon.cma /usr/lib/ocaml/compiler-libs/ocamlbytecomp.cma /usr/lib/ocaml/compiler-libs/ocamltoplevel.cma /home/nin7o/.opam/default/lib/findlib/findlib.cma /home/nin7o/.opam/default/lib/findlib/findlib_top.cma /home/nin7o/.opam/default/lib/logs/logs.cma /home/nin7o/.opam/default/lib/lwt/lwt.cma /home/nin7o/.opam/default/lib/logs/logs_lwt.cma /home/nin7o/.opam/default/lib/ocplib-endian/ocplib_endian.cma /home/nin7o/.opam/default/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /usr/lib/ocaml/unix/unix.cma /usr/lib/ocaml/threads/threads.cma /home/nin7o/.opam/default/lib/lwt/unix/lwt_unix.cma -I /home/nin7o/.opam/default/lib/lwt/unix /home/nin7o/.opam/default/lib/react/react.cma /home/nin7o/.opam/default/lib/lwt_react/lwt_react.cma /home/nin7o/.opam/default/lib/result/result.cma /home/nin7o/.opam/default/lib/uutf/uutf.cma /home/nin7o/.opam/default/lib/uucp/uucp.cma /home/nin7o/.opam/default/lib/uuseg/uuseg.cma /home/nin7o/.opam/default/lib/zed/zed.cma /home/nin7o/.opam/default/lib/trie/trie.cma /home/nin7o/.opam/default/lib/mew/mew.cma /home/nin7o/.opam/default/lib/mew_vi/mew_vi.cma /home/nin7o/.opam/default/lib/lambda-term/lambda_term.cma -I /home/nin7o/.opam/default/lib/lambda-term /home/nin7o/.opam/default/lib/xdg/xdg.cma -I /home/nin7o/.opam/default/lib/xdg /home/nin7o/.opam/default/lib/utop/uTop.cma /home/nin7o/.opam/default/lib/ppx_inline_test/config/inline_test_config.cma /home/nin7o/.opam/default/lib/base/base_internalhash_types/base_internalhash_types.cma -I /home/nin7o/.opam/default/lib/base/base_internalhash_types /home/nin7o/.opam/default/lib/base/caml/caml.cma /home/nin7o/.opam/default/lib/sexplib0/sexplib0.cma /home/nin7o/.opam/default/lib/base/shadow_stdlib/shadow_stdlib.cma /home/nin7o/.opam/default/lib/base/base.cma -I /home/nin7o/.opam/default/lib/base /home/nin7o/.opam/default/lib/jane-street-headers/jane_street_headers.cma /home/nin7o/.opam/default/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cma /home/nin7o/.opam/default/lib/ppx_compare/runtime-lib/ppx_compare_lib.cma /home/nin7o/.opam/default/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cma /home/nin7o/.opam/default/lib/ppx_hash/runtime-lib/ppx_hash_lib.cma /home/nin7o/.opam/default/lib/time_now/time_now.cma -I /home/nin7o/.opam/default/lib/time_now /home/nin7o/.opam/default/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cma tp3.cma .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)
